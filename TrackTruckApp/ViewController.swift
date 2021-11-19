@@ -37,13 +37,12 @@ class ViewController: UIViewController {
     private func fetchData(data: [TruckData]) {
         originalData = data
         responseData = originalData
-        responseData = responseData?.sorted(by: {(($0.lastWaypoint?.createTime ?? 0) > ($1.lastWaypoint?.createTime ?? 0))})
     }
     
     private func mapSetup(response: TruckData) {
         let latitude = response.lastWaypoint?.lat ?? 0.0
         let longitude = response.lastWaypoint?.lng ?? 0.0
-        let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 6.0)
+        let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 10.0)
         google_map.camera = camera
         self.showMarker(position: google_map.camera.target, data: response)
     }
@@ -51,17 +50,20 @@ class ViewController: UIViewController {
         let marker = GMSMarker()
         let lastRunningState = data.lastRunningState?.truckRunningState ?? 0
         let duration = Constants.splitDuration(durationText: Constants.conversionToTimestamp(myMilliseconds: data.lastWaypoint?.createTime ?? 0))
+        let markerImage = UIImage(named: "truckIcon")!.withRenderingMode(.alwaysTemplate)
+        let markerView = UIImageView(image: markerImage)
         if Constants.isInErrorState(val: duration.val, unit: duration.unit) {
-            marker.icon = GMSMarker.markerImage(with: UIColor.systemRed)
+            markerView.tintColor = UIColor.systemRed
         } else if lastRunningState == 0 {
             if (data.lastWaypoint?.ignitionOn ?? false) {
-                marker.icon = GMSMarker.markerImage(with: UIColor.systemYellow)
+                markerView.tintColor = UIColor.systemYellow
             } else {
-                marker.icon = GMSMarker.markerImage(with: UIColor.systemBlue)
+                markerView.tintColor = UIColor.systemBlue
             }
         } else {
-            marker.icon = GMSMarker.markerImage(with: UIColor.systemGreen)
+            markerView.tintColor = UIColor.systemGreen
         }
+        marker.iconView = markerView
         marker.position = position
         marker.map = google_map
     }
@@ -99,7 +101,7 @@ class ViewController: UIViewController {
         if listIsVisible {
             refreshRightAnchor.priority = UILayoutPriority(250)
             refreshLowPriorityRightAnchor.priority = UILayoutPriority(750)
-            listButton.setImage(UIImage(systemName: "mappin.and.ellipse"), for: .normal)
+            listButton.setImage(UIImage(named: "map_icon")?.withTintColor(.white, renderingMode: .alwaysTemplate), for: .normal)
             searchButton.isHidden = false
             truckList.isHidden = false
         } else {

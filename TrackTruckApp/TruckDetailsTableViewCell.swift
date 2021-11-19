@@ -27,8 +27,10 @@ class TruckDetailsTableViewCell: BaseTableViewCell<TruckData> {
         trucknumberLabel.text = data.truckNumber
         if data.lastRunningState?.truckRunningState == 0 {
             truckStatusLabel.text = "Stopped since last \(Constants.conversionToTimestamp(myMilliseconds: data.lastRunningState?.stopStartTime ?? 0))."
+            truckSpeedLabel.isHidden = true
         } else {
             truckStatusLabel.text = "Running since last \(Constants.conversionToTimestamp(myMilliseconds: data.lastRunningState?.stopStartTime ?? 0))."
+            truckSpeedLabel.isHidden = false
         }
         let attrs1 = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor : UIColor.red]
         let attrs2 = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor : UIColor.lightGray]

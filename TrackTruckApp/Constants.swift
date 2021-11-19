@@ -29,9 +29,9 @@ class Constants {
     }
     
     static func isInErrorState(val: Int, unit: String)-> Bool {
-        if unit == "days" {
+        if unit.contains("day") {
             return true
-        } else if unit == "hours" && val >= 4 {
+        } else if unit.contains("hour") && val >= 4 {
             return true
         } else {
             return false
