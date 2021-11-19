@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042D22D9274513250008A9BC /* TruckDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D22D7274513250008A9BC /* TruckDetailsTableViewCell.swift */; };
+		042D22DA274513250008A9BC /* TruckDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042D22D8274513250008A9BC /* TruckDetailsTableViewCell.xib */; };
+		042D22DC2745184C0008A9BC /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D22DB2745184C0008A9BC /* BaseTableViewCell.swift */; };
+		04678E2E2743E09100B7E334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04678E2D2743E09100B7E334 /* AppDelegate.swift */; };
+		04678E302743E09100B7E334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04678E2F2743E09100B7E334 /* SceneDelegate.swift */; };
+		04678E322743E09100B7E334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04678E312743E09100B7E334 /* ViewController.swift */; };
+		04678E352743E09100B7E334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04678E332743E09100B7E334 /* Main.storyboard */; };
+		04678E372743E09400B7E334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04678E362743E09400B7E334 /* Assets.xcassets */; };
+		04678E3A2743E09400B7E334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04678E382743E09400B7E334 /* LaunchScreen.storyboard */; };
+		04678E452743E09400B7E334 /* TrackTruckAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04678E442743E09400B7E334 /* TrackTruckAppTests.swift */; };
+		04678E4F2743E09400B7E334 /* TrackTruckAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04678E4E2743E09400B7E334 /* TrackTruckAppUITests.swift */; };
+		04678E512743E09400B7E334 /* TrackTruckAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04678E502743E09400B7E334 /* TrackTruckAppUITestsLaunchTests.swift */; };
+		04678E5E2743F3D100B7E334 /* DataProviderModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04678E5D2743F3D100B7E334 /* DataProviderModal.swift */; };
+		04BF33842746697900B74F96 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF33832746697900B74F96 /* Constants.swift */; };
+		44F6620E5D5D4D358F0A07FC /* Pods_TrackTruckApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2385D0200A30067C2789D3 /* Pods_TrackTruckApp.framework */; };
+		95F4F3A2AD10E0A964458B23 /* Pods_TrackTruckAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7823B9EC1ED04AA6094709C /* Pods_TrackTruckAppTests.framework */; };
+		F03599C7B5302596D5946EE8 /* Pods_TrackTruckApp_TrackTruckAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F1105E7EE8A2672296FB51 /* Pods_TrackTruckApp_TrackTruckAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04678E412743E09400B7E334 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04678E222743E09100B7E334 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04678E292743E09100B7E334;
+			remoteInfo = TrackTruckApp;
+		};
+		04678E4B2743E09400B7E334 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04678E222743E09100B7E334 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04678E292743E09100B7E334;
+			remoteInfo = TrackTruckApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042D22D7274513250008A9BC /* TruckDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		042D22D8274513250008A9BC /* TruckDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TruckDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		042D22DB2745184C0008A9BC /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		04678E2A2743E09100B7E334 /* TrackTruckApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackTruckApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04678E2D2743E09100B7E334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04678E2F2743E09100B7E334 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04678E312743E09100B7E334 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04678E342743E09100B7E334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04678E362743E09400B7E334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04678E392743E09400B7E334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04678E3B2743E09400B7E334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04678E402743E09400B7E334 /* TrackTruckAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackTruckAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04678E442743E09400B7E334 /* TrackTruckAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTruckAppTests.swift; sourceTree = "<group>"; };
+		04678E4A2743E09400B7E334 /* TrackTruckAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackTruckAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04678E4E2743E09400B7E334 /* TrackTruckAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTruckAppUITests.swift; sourceTree = "<group>"; };
+		04678E502743E09400B7E334 /* TrackTruckAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTruckAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04678E5D2743F3D100B7E334 /* DataProviderModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderModal.swift; sourceTree = "<group>"; };
+		04BF33832746697900B74F96 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2E7D17FA1801EFA884AD3B86 /* Pods-TrackTruckApp-TrackTruckAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTruckApp-TrackTruckAppUITests.release.xcconfig"; path = "Target Support Files/Pods-TrackTruckApp-TrackTruckAppUITests/Pods-TrackTruckApp-TrackTruckAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		34B56493F5A7E76C3ABF5271 /* Pods-TrackTruckAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTruckAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TrackTruckAppTests/Pods-TrackTruckAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E911FEB91D99E0109FA9F02 /* Pods-TrackTruckApp-TrackTruckAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTruckApp-TrackTruckAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrackTruckApp-TrackTruckAppUITests/Pods-TrackTruckApp-TrackTruckAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		60529E4CC3D107C510175C75 /* Pods-TrackTruckApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTruckApp.release.xcconfig"; path = "Target Support Files/Pods-TrackTruckApp/Pods-TrackTruckApp.release.xcconfig"; sourceTree = "<group>"; };
+		93F1105E7EE8A2672296FB51 /* Pods_TrackTruckApp_TrackTruckAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackTruckApp_TrackTruckAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2385D0200A30067C2789D3 /* Pods_TrackTruckApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackTruckApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7EB93924DF35D47C58328D8 /* Pods-TrackTruckAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTruckAppTests.release.xcconfig"; path = "Target Support Files/Pods-TrackTruckAppTests/Pods-TrackTruckAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		BBEB3B5BF33DA2E74D458AEE /* Pods-TrackTruckApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTruckApp.debug.xcconfig"; path = "Target Support Files/Pods-TrackTruckApp/Pods-TrackTruckApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C7823B9EC1ED04AA6094709C /* Pods_TrackTruckAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackTruckAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04678E272743E09100B7E334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F6620E5D5D4D358F0A07FC /* Pods_TrackTruckApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04678E3D2743E09400B7E334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F4F3A2AD10E0A964458B23 /* Pods_TrackTruckAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04678E472743E09400B7E334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F03599C7B5302596D5946EE8 /* Pods_TrackTruckApp_TrackTruckAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04678E212743E09100B7E334 = {
+			isa = PBXGroup;
+			children = (
+				04678E2C2743E09100B7E334 /* TrackTruckApp */,
+				04678E432743E09400B7E334 /* TrackTruckAppTests */,
+				04678E4D2743E09400B7E334 /* TrackTruckAppUITests */,
+				04678E2B2743E09100B7E334 /* Products */,
+				1C04B9E35DF0685D6673F6ED /* Pods */,
+				1051C2ED079396CCE48C743D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04678E2B2743E09100B7E334 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04678E2A2743E09100B7E334 /* TrackTruckApp.app */,
+				04678E402743E09400B7E334 /* TrackTruckAppTests.xctest */,
+				04678E4A2743E09400B7E334 /* TrackTruckAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04678E2C2743E09100B7E334 /* TrackTruckApp */ = {
+			isa = PBXGroup;
+			children = (
+				04678E2D2743E09100B7E334 /* AppDelegate.swift */,
+				04678E2F2743E09100B7E334 /* SceneDelegate.swift */,
+				04BF33832746697900B74F96 /* Constants.swift */,
+				042D22DB2745184C0008A9BC /* BaseTableViewCell.swift */,
+				04678E5D2743F3D100B7E334 /* DataProviderModal.swift */,
+				04678E312743E09100B7E334 /* ViewController.swift */,
+				04678E332743E09100B7E334 /* Main.storyboard */,
+				042D22D7274513250008A9BC /* TruckDetailsTableViewCell.swift */,
+				042D22D8274513250008A9BC /* TruckDetailsTableViewCell.xib */,
+				04678E362743E09400B7E334 /* Assets.xcassets */,
+				04678E382743E09400B7E334 /* LaunchScreen.storyboard */,
+				04678E3B2743E09400B7E334 /* Info.plist */,
+			);
+			path = TrackTruckApp;
+			sourceTree = "<group>";
+		};
+		04678E432743E09400B7E334 /* TrackTruckAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				04678E442743E09400B7E334 /* TrackTruckAppTests.swift */,
+			);
+			path = TrackTruckAppTests;
+			sourceTree = "<group>";
+		};
+		04678E4D2743E09400B7E334 /* TrackTruckAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04678E4E2743E09400B7E334 /* TrackTruckAppUITests.swift */,
+				04678E502743E09400B7E334 /* TrackTruckAppUITestsLaunchTests.swift */,
+			);
+			path = TrackTruckAppUITests;
+			sourceTree = "<group>";
+		};
+		1051C2ED079396CCE48C743D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A2385D0200A30067C2789D3 /* Pods_TrackTruckApp.framework */,
+				93F1105E7EE8A2672296FB51 /* Pods_TrackTruckApp_TrackTruckAppUITests.framework */,
+				C7823B9EC1ED04AA6094709C /* Pods_TrackTruckAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C04B9E35DF0685D6673F6ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBEB3B5BF33DA2E74D458AEE /* Pods-TrackTruckApp.debug.xcconfig */,
+				60529E4CC3D107C510175C75 /* Pods-TrackTruckApp.release.xcconfig */,
+				3E911FEB91D99E0109FA9F02 /* Pods-TrackTruckApp-TrackTruckAppUITests.debug.xcconfig */,
+				2E7D17FA1801EFA884AD3B86 /* Pods-TrackTruckApp-TrackTruckAppUITests.release.xcconfig */,
+				34B56493F5A7E76C3ABF5271 /* Pods-TrackTruckAppTests.debug.xcconfig */,
+				B7EB93924DF35D47C58328D8 /* Pods-TrackTruckAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04678E292743E09100B7E334 /* TrackTruckApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04678E542743E09400B7E334 /* Build configuration list for PBXNativeTarget "TrackTruckApp" */;
+			buildPhases = (
+				AB3ADE46F2B6EE7A720EE0A9 /* [CP] Check Pods Manifest.lock */,
+				04678E262743E09100B7E334 /* Sources */,
+				04678E272743E09100B7E334 /* Frameworks */,
+				04678E282743E09100B7E334 /* Resources */,
+				9FA3F408E7986CD0C9D5540C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrackTruckApp;
+			productName = TrackTruckApp;
+			productReference = 04678E2A2743E09100B7E334 /* TrackTruckApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04678E3F2743E09400B7E334 /* TrackTruckAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04678E572743E09400B7E334 /* Build configuration list for PBXNativeTarget "TrackTruckAppTests" */;
+			buildPhases = (
+				146FBBA006A12CDB6A500918 /* [CP] Check Pods Manifest.lock */,
+				04678E3C2743E09400B7E334 /* Sources */,
+				04678E3D2743E09400B7E334 /* Frameworks */,
+				04678E3E2743E09400B7E334 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04678E422743E09400B7E334 /* PBXTargetDependency */,
+			);
+			name = TrackTruckAppTests;
+			productName = TrackTruckAppTests;
+			productReference = 04678E402743E09400B7E334 /* TrackTruckAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04678E492743E09400B7E334 /* TrackTruckAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04678E5A2743E09400B7E334 /* Build configuration list for PBXNativeTarget "TrackTruckAppUITests" */;
+			buildPhases = (
+				F3A78A35EB14B799620AA536 /* [CP] Check Pods Manifest.lock */,
+				04678E462743E09400B7E334 /* Sources */,
+				04678E472743E09400B7E334 /* Frameworks */,
+				04678E482743E09400B7E334 /* Resources */,
+				BC5612B80B31A4D53E0EDF98 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04678E4C2743E09400B7E334 /* PBXTargetDependency */,
+			);
+			name = TrackTruckAppUITests;
+			productName = TrackTruckAppUITests;
+			productReference = 04678E4A2743E09400B7E334 /* TrackTruckAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04678E222743E09100B7E334 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					04678E292743E09100B7E334 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					04678E3F2743E09400B7E334 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 04678E292743E09100B7E334;
+					};
+					04678E492743E09400B7E334 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 04678E292743E09100B7E334;
+					};
+				};
+			};
+			buildConfigurationList = 04678E252743E09100B7E334 /* Build configuration list for PBXProject "TrackTruckApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04678E212743E09100B7E334;
+			productRefGroup = 04678E2B2743E09100B7E334 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04678E292743E09100B7E334 /* TrackTruckApp */,
+				04678E3F2743E09400B7E334 /* TrackTruckAppTests */,
+				04678E492743E09400B7E334 /* TrackTruckAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04678E282743E09100B7E334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042D22DA274513250008A9BC /* TruckDetailsTableViewCell.xib in Resources */,
+				04678E3A2743E09400B7E334 /* LaunchScreen.storyboard in Resources */,
+				04678E372743E09400B7E334 /* Assets.xcassets in Resources */,
+				04678E352743E09100B7E334 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04678E3E2743E09400B7E334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04678E482743E09400B7E334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		146FBBA006A12CDB6A500918 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrackTruckAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FA3F408E7986CD0C9D5540C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrackTruckApp/Pods-TrackTruckApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrackTruckApp/Pods-TrackTruckApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrackTruckApp/Pods-TrackTruckApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB3ADE46F2B6EE7A720EE0A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrackTruckApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC5612B80B31A4D53E0EDF98 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrackTruckApp-TrackTruckAppUITests/Pods-TrackTruckApp-TrackTruckAppUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrackTruckApp-TrackTruckAppUITests/Pods-TrackTruckApp-TrackTruckAppUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrackTruckApp-TrackTruckAppUITests/Pods-TrackTruckApp-TrackTruckAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3A78A35EB14B799620AA536 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrackTruckApp-TrackTruckAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04678E262743E09100B7E334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04678E5E2743F3D100B7E334 /* DataProviderModal.swift in Sources */,
+				04678E322743E09100B7E334 /* ViewController.swift in Sources */,
+				042D22D9274513250008A9BC /* TruckDetailsTableViewCell.swift in Sources */,
+				04678E2E2743E09100B7E334 /* AppDelegate.swift in Sources */,
+				04BF33842746697900B74F96 /* Constants.swift in Sources */,
+				042D22DC2745184C0008A9BC /* BaseTableViewCell.swift in Sources */,
+				04678E302743E09100B7E334 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04678E3C2743E09400B7E334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04678E452743E09400B7E334 /* TrackTruckAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04678E462743E09400B7E334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04678E512743E09400B7E334 /* TrackTruckAppUITestsLaunchTests.swift in Sources */,
+				04678E4F2743E09400B7E334 /* TrackTruckAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04678E422743E09400B7E334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04678E292743E09100B7E334 /* TrackTruckApp */;
+			targetProxy = 04678E412743E09400B7E334 /* PBXContainerItemProxy */;
+		};
+		04678E4C2743E09400B7E334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04678E292743E09100B7E334 /* TrackTruckApp */;
+			targetProxy = 04678E4B2743E09400B7E334 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04678E332743E09100B7E334 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04678E342743E09100B7E334 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04678E382743E09400B7E334 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04678E392743E09400B7E334 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04678E522743E09400B7E334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04678E532743E09400B7E334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04678E552743E09400B7E334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBEB3B5BF33DA2E74D458AEE /* Pods-TrackTruckApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrackTruckApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithrajat.TrackTruckApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04678E562743E09400B7E334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60529E4CC3D107C510175C75 /* Pods-TrackTruckApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrackTruckApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithrajat.TrackTruckApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04678E582743E09400B7E334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34B56493F5A7E76C3ABF5271 /* Pods-TrackTruckAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithrajat.TrackTruckAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrackTruckApp.app/TrackTruckApp";
+			};
+			name = Debug;
+		};
+		04678E592743E09400B7E334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7EB93924DF35D47C58328D8 /* Pods-TrackTruckAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithrajat.TrackTruckAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrackTruckApp.app/TrackTruckApp";
+			};
+			name = Release;
+		};
+		04678E5B2743E09400B7E334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E911FEB91D99E0109FA9F02 /* Pods-TrackTruckApp-TrackTruckAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithrajat.TrackTruckAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrackTruckApp;
+			};
+			name = Debug;
+		};
+		04678E5C2743E09400B7E334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7D17FA1801EFA884AD3B86 /* Pods-TrackTruckApp-TrackTruckAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithrajat.TrackTruckAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrackTruckApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04678E252743E09100B7E334 /* Build configuration list for PBXProject "TrackTruckApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04678E522743E09400B7E334 /* Debug */,
+				04678E532743E09400B7E334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04678E542743E09400B7E334 /* Build configuration list for PBXNativeTarget "TrackTruckApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04678E552743E09400B7E334 /* Debug */,
+				04678E562743E09400B7E334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04678E572743E09400B7E334 /* Build configuration list for PBXNativeTarget "TrackTruckAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04678E582743E09400B7E334 /* Debug */,
+				04678E592743E09400B7E334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04678E5A2743E09400B7E334 /* Build configuration list for PBXNativeTarget "TrackTruckAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04678E5B2743E09400B7E334 /* Debug */,
+				04678E5C2743E09400B7E334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04678E222743E09100B7E334 /* Project object */;
+}
